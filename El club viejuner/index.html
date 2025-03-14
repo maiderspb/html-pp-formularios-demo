@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>El club viejuner</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset id="Tú">
+          <h2>Formulario de admisión</h2>
+          <h3>¿Quién eres Tú?</h3>
+          <label for="Nombre">Nombre</label> <br />
+          <input
+            type="text"
+            name="Nombre"
+            id="Nombre"
+            autofocus
+            placeholder="Ingresa tu nombre"
+            required
+          />
+          <br />
+
+          <label for="Apellidos">Apellidos</label> <br />
+          <input
+            type="text"
+            name="Apellidos"
+            id="Apellidos"
+            placeholder="Ingresa tus apellidos"
+            required
+          />
+          <br />
+
+          <label for="Edad">Edad</label> <br />
+          <input
+            type="number"
+            name="Edad"
+            id="Edad"
+            placeholder="Edad"
+            min="18"
+            max="120"
+            required
+          />
+          <br />
+          <hr />
+          <p>Sexo:</p>
+          <label for="masculino">Hombre</label>
+          <input type="radio" name="Sexo" id="Hombre" value="Hombre" required />
+          <label for="femenino">Mujer</label>
+          <input type="radio" name="sexo" id="Mujer" value="Mujer" />
+          <label for="otro">Otro</label>
+          <input type="radio" name="sexo" id="Otro" value="Otro" />
+          <hr />
+          <label for="viejuner">Me siento viejuner:</label> <br />
+          <input type="checkbox" name="Viejuner" id="Viejuner" value="Yes" />
+          <br />
+          <hr />
+          <label for="info">Escribe algo sobre tí:</label><br />
+          <textarea
+            name="info"
+            id="info"
+            rows="8"
+            placeholder="Me gustaría..."
+            maxlength="300"
+          ></textarea>
+        </fieldset>
+        <fieldset id="datos">
+          <h3>¿Cuáles son tus circunstancias? <br /></h3>
+          <h4>Datos de contacto:</h4>
+          <label for="email">Correo electrónico</label><br />
+          <input type="email" required /><br />
+          <label for="tel">Teléfono</label><br />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+            pattern="[6-9][0-9]{8}"
+          /><br />
+        </fieldset>
+        <fieldset id="botones">
+          <input type="reset" name="reset" id="reset" />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

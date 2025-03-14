@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los ladronzuelos de bicicletas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Los ladronzuelos de bicicletas</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset id="datos">
+          <h2>Formulario robo de bicicletas</h2>
+
+          <label for="dia">Día:</label>
+          <input type="date" id="dia" name="fecha" required /><br /><br />
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required /><br /><br />
+
+          <label for="color">Color de la bicicleta:</label>
+          <input type="color" id="color" name="color" required /><br /><br />
+
+          <label for="precio">Rango de precio (0-1.000€):</label>
+          <span>0</span>
+          <input
+            type="range"
+            id="precio"
+            name="precio"
+            min="0"
+            max="1000"
+            step="50"
+            required
+          />
+          <span>1.000</span>
+
+          <label for="tipo">Tipo de bicicleta:</label>
+          <select id="tipo" name="tipo" required>
+            <optgroup label="Paseo">
+              <option value="Señorial">Señorial</option>
+              <option value="Anti-plebeyos">Anti-plebeyos</option>
+              <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+            </optgroup>
+            <optgroup label="Montaña">
+              <option value="Gamusinos">Gamusinos</option>
+              <option value="Hueleflores-premium">Hueleflores premium</option>
+              <option value="Fango-lover">Fango lover</option>
+            </optgroup>
+            <optgroup label="Carreras">
+              <option value="metroymedio">Metroymedio</option>
+              <option value="3-de-la-tarde-Fluorescente-edition">
+                3 de la tarde. Fluorescente edition
+              </option>
+              <option value="Grupitors">Grupitors</option>
+            </optgroup>
+          </select>
+
+          <label for="accesorios">Accesorios:</label>
+          <select id="accesorios" name="selector" multiple>
+            <option value="Ruedines">Ruedines</option>
+            <option value="Pegatinas">Pegatinas</option>
+            <option value="Cestita">Cestita</option>
+            <option value="Bomba de aire">Bomba de aire</option>
+            <option value="Timbre">Timbre</option>
+            <option value="Foco">Foco</option></select
+          ><br /><br />
+
+          <label for="marca">¿Qué marca era?:</label>
+          <datalist id="marcas">
+            <option value="specialized"></option>
+            <option value="trek"></option>
+            <option value="merida"></option>
+            <option value="scott"></option>
+            <option value="giant"></option>
+            <option value="cube"></option>
+            <option value="lapierre"></option>
+            <option value="orbea"></option>
+            <option value="cannondale"></option>
+            <option value="bmc"></option>
+            <option value="canyon"></option>
+            <option value="look"></option>
+            <option value="protek"></option>
+            <option value="megamo"></option>
+            <option value="pinarello"></option>
+            <option value="bianchi"></option>
+            <option value="bh"></option>
+            <option value="factor"></option>
+            <option value="ghost"></option>
+            <option value="cervélo"></option>
+            <option value="argon"></option>
+          </datalist>
+
+          <input
+            type="text"
+            id="marca"
+            name="marca"
+            list="marcas"
+          /><br /><br />
+        </fieldset>
+        <fieldset id="botones">
+          <input type="reset" name="reset" id="reset" />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
